@@ -1,0 +1,85 @@
+.ashram-details {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.ashram-details h1 {
+  text-align: center;
+  color: #18230F;
+  margin-bottom: 10px;
+}
+
+.ashram-details h2 {
+  color: #18230F;
+  border-bottom: 2px solid #18230F;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+.ashram-details p, 
+.ashram-details ul {
+  color: #18230F;
+  line-height: 1.6;
+}
+
+.ashram-details a {
+  color: #255F38;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.ashram-details a:hover {
+  text-decoration: underline;
+}
+
+.ashram-details ul {
+  padding-left: 20px;
+}
+
+.ashram-details ul li {
+  margin: 5px 0;
+}
+
+.gallery {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.interested-button {
+  background: #27391C;
+    box-shadow: 10px 10px 5px #18230F inset;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+  margin-top: 20px;
+}
+
+.interested{
+  text-align: center;
+}
+.interested-button:hover {
+  background-color: #1e2c15;
+    box-shadow: 10px 10px 5px #11190b inset;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ashram-details{
+      background: none;
+    }
+}

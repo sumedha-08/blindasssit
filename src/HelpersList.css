@@ -1,0 +1,121 @@
+/* Helpers List Container */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Title Styling */
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #073c25;
+  text-align: center;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: #077041;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Form Styling */
+form {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Button Styling */
+button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  background: #077041;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #055a32;
+}
+
+/* Card Styling */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 20px;
+  color: #255F38;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #555;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.helperbtn{
+  background: #27391C;
+  box-shadow: 10px 10px 5px #18230F inset;
+  color: white;
+}
+.helperbtn:hover{
+  background-color: #1e2c15 !important;
+    box-shadow: 10px 10px 5px #11190b inset;
+    color: white !important;
+}
+
+.delete{
+  background: #27391C;
+  box-shadow: 10px 10px 5px #18230F inset;
+}
+
+.delete:hover{
+  background-color: #1e2c15;
+    box-shadow: 10px 10px 5px #11190b inset;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 350px;
+  }
+}

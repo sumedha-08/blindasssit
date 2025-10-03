@@ -1,0 +1,106 @@
+/* .students-container {
+  position: relative;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px; */
+    /* margin: 20px auto; */
+    /* width: 97%;
+    align-content: center;
+    overflow: hidden;
+    margin-right: 0;
+  } */
+  /* General container styling */
+.students-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #18230F;
+  margin-bottom: 20px;
+}
+
+/* Grid layout for students */
+.students-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Student card design */
+.student-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Student profile image */
+.student-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+/* Student name */
+.student-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+/* Button design */
+.help-btn {
+  background: #27391C;
+    box-shadow: 10px 10px 5px #18230F inset;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease-in-out;
+}
+
+.help-btn:hover {
+  background-color: #1e2c15;
+    box-shadow: 10px 10px 5px #11190b inset;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .students-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .students-container {
+    padding: 40px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .students-grid {
+    width: 100%;
+  }
+}

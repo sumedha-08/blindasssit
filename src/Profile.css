@@ -1,0 +1,122 @@
+/* Wrapper to make it take full screen */
+.profile-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;         /* Full viewport height */
+    background: #f4f4f4;
+  }
+  
+  /* Profile Container */
+  .profile-container {
+    width: 90%;
+    max-width: 450px;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  /* Profile Header */
+  .profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #00b72e;
+  }
+  
+  /* Name & Role */
+  .profile-header h2 {
+    margin: 12px 0 5px;
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .role {
+    color: #00b72e;
+    font-weight: bold;
+  }
+  
+  /* Profile Details */
+  .profile-details {
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .profile-details p {
+    font-size: 16px;
+    color: #555;
+    padding: 5px 0;
+  }
+  
+  /* Buttons */
+  .profile-actions {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .edit-btn,
+  .logout-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  /* Edit Button */
+  .edit-btn {
+    background: #27391C;
+    box-shadow: 10px 10px 5px #18230F inset;
+    color: white;
+  }
+  
+  .edit-btn:hover {
+    background-color: #1e2c15;
+    box-shadow: 10px 10px 5px #11190b inset;
+  }
+  
+  /* Logout Button */
+  .logout-btn {
+    background: #27391C;
+    box-shadow: 10px 10px 5px #18230F inset;
+    color: white;
+  }
+  
+  .logout-btn:hover {
+    background-color: #1e2c15;
+    box-shadow: 10px 10px 5px #11190b inset;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .profile-container {
+      width: 95%;
+      padding: 20px;
+      margin: 20px;
+    }
+  
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .edit-btn,
+    .logout-btn {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  

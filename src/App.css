@@ -1,0 +1,51 @@
+/* General body styling */
+body {
+  background: rgba(0, 0, 0, 0.1);
+  color: black;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background: #121212;
+  color: white;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  overflow: auto;
+  transition: width 0.3s ease-in-out;
+  background: rgb(39,57,28);
+background: linear-gradient(0deg, rgba(39,57,28,1) 0%, rgba(37,95,56,1) 54%, rgba(31,125,83,1) 100%);
+top: -1px;
+}
+
+/* Content area: Takes full width after removing content-container */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow: auto;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+/* Theme switch icon */
+.theme-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .sidebar {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+  }
+
+  .main-content {
+      padding: 15px;
+  }
+}
